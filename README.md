@@ -20,6 +20,8 @@ Includes visualizations of the training process, confusion matrix, and sample pr
 Contributions and feedback are welcome. Please open an issue or a pull request if you have any suggestions or improvements.
 
 ### Resources
+Link to another project I made which classifies chest-xray as pneumonic or normal: https://www.kaggle.com/code/divyam6969/chest-xray-classifier
+
 Chest X-ray dataset on Kaggle: https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 
 FastAI library: https://www.fast.ai/
@@ -28,3 +30,4 @@ Kaggle API: https://github.com/Kaggle/kaggle-api
 
 ### License
 This project is licensed under the MIT License. See the <a href="https://github.com/Divyam6969/Pneumonia-Detection-using-FastAI-/blob/main/LICENSE">LICENSE</a> file for details.
+
