@@ -16,13 +16,15 @@ Demonstrates how to fine-tune a pre-trained model using FastAI.
 Achieves high accuracy in detecting pneumonia in chest X-rays.
 Includes visualizations of the training process, confusion matrix, and sample predictions.
 
-###Contribution
+### Contribution
 Contributions and feedback are welcome. Please open an issue or a pull request if you have any suggestions or improvements.
 
 ### Resources
 Chest X-ray dataset on Kaggle: https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+
 FastAI library: https://www.fast.ai/
+
 Kaggle API: https://github.com/Kaggle/kaggle-api
 
 ### License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the <a href="https://github.com/Divyam6969/Pneumonia-Detection-using-FastAI-/blob/main/LICENSE">LICENSE</a> file for details.
