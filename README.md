@@ -21,6 +21,7 @@ Contributions and feedback are welcome. Please open an issue or a pull request i
 
 ### Resources
 Link to another project I made which classifies chest-xray as pneumonic or normal: https://www.kaggle.com/code/divyam6969/chest-xray-classifier
+
 Link to my previous project: https://github.com/Divyam6969/Pneumonia-Detection-AI (this model is overfitting :/)
 
 Chest X-ray dataset on Kaggle: https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
