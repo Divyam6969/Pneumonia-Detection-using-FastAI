@@ -1,5 +1,5 @@
 # Pneumonia Detection using FastAI ResNet50 Model
-This project uses a pre-trained ResNet50 model from the FastAI library to detect pneumonia in chest X-rays. The dataset used for training the model consists of chest X-rays labeled as normal or pneumonia. The project demonstrates how to fine-tune the pre-trained model using FastAI's.
+This project uses a pre-trained ResNet50 model from the FastAI library to detect pneumonia in chest X-rays. The dataset which is available on kaggle is used for training the model which classifies the chest xray as NORMAL, VIRAL PNEUMONIAL or BACTERIAL PNEUMONIAL
 
 ### Getting Started
 To use this project, follow these steps:
