@@ -24,5 +24,5 @@ Chest X-ray dataset on Kaggle: https://www.kaggle.com/paultimothymooney/chest-xr
 FastAI library: https://www.fast.ai/
 Kaggle API: https://github.com/Kaggle/kaggle-api
 
-###License
+### License
 This project is licensed under the MIT License. See the LICENSE file for details.
