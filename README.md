@@ -3,7 +3,7 @@ This project uses a pre-trained ResNet50 model from the FastAI library to detect
 
 ### Getting Started
 To use this project, follow these steps:
-1) Clone the repository: git clone https://github.com/Divyam6969/Pneumonia-Detection-using-FastAI-<br>
+1) Clone the repository: git clone https://github.com/Divyam6969/Pneumonia-Detection-using-FastAI<br>
 2) Install the necessary dependencies: pip install fastbook<br>
 3) Download the Chest X-ray dataset from Kaggle and extract it to the appropriate directory.<br>
 Open the pneumonia-detection.ipynb notebook and follow the instructions to train and evaluate the model.<br>
