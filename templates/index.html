@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Cancer Detector</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #4caf50;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #fff;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            margin-right: 10px;
+            color: #333;
+        }
+
+        input[type="file"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Pneumonia Chest XRAY Classifier</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pneumonia Detection</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="mt-3">Pneumonia Chest XRAY Classifier</h1>
+        
+        <form method="post" action="/submit" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="my_image">Choose an image:</label>
+                <input type="file" class="form-control-file" name="my_image" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+
+        {% if prediction %}
+            <h2 class="mt-4">Prediction:</h2>
+            <p>{{ prediction }}</p>
+            <p><strong>Description:</strong> {{ description }}</p>
+            <p><strong>Risk Factors:</strong> {{ risk_factors }}</p>
+            <img src="{{ url_for('static', filename=img_path.split('/')[-1]) }}" class="img-fluid mt-3" alt="Uploaded Image">
+        {% endif %}
+    </div>
+
+    <div class="container mt-5">
+        <h2>About Pneumonia</h2>
+        <p>
+            Pneumonia is a common respiratory infection that can affect one or both lungs. It is characterized by inflammation of the air sacs in the lungs, leading to symptoms such as cough, difficulty breathing, chest pain, and fever. Our pneumonia detection model, developed using advanced technology, boasts an accuracy of 90% in identifying pneumonia-related abnormalities.
+        </p>
+        <p>
+            There are various types of pneumonia, each with distinct characteristics:
+        </p>
+        <ul>
+            <li><strong>Viral Pneumonia:</strong> Caused by viruses such as influenza, respiratory syncytial virus (RSV), or the coronavirus. Symptoms may include cough, fever, fatigue, and shortness of breath.</li>
+            <li><strong>Bacterial Pneumonia:</strong> Caused by bacteria, including Streptococcus pneumoniae and Haemophilus influenzae. Symptoms often include cough with phlegm, chest pain, high fever, and rapid breathing.</li>
+            <li><strong>Normal Lung Condition:</strong> Absence of pneumonia or significant lung infections. Individuals experience normal breathing patterns and overall good respiratory health.</li>
+        </ul>
+        <p>
+            Early detection and treatment of pneumonia are crucial for effective management. Our model, with its 90% accuracy, aids in the prompt identification of potential respiratory issues.
+        </p>
+        <h3>Prevention and Awareness:</h3>
+        <p>
+            While early detection is essential, preventing pneumonia is equally important. Here are some tips for pneumonia prevention:
+        </p>
+        <ul>
+            <li>Practice good hand hygiene by washing hands regularly.</li>
+            <li>Get vaccinated against common respiratory infections, including influenza and pneumococcal disease.</li>
+            <li>Avoid close contact with individuals who have respiratory infections.</li>
+            <li>Quit smoking, as it increases the risk of respiratory infections.</li>
+            <li>Maintain a healthy lifestyle with regular exercise and a balanced diet to support overall immune health.</li>
+        </ul>
+        <p>
+            Pneumonia is often preventable, and early detection significantly improves the chances of successful treatment. Stay informed, adopt healthy habits, and prioritize regular check-ups for a healthy respiratory system.
+        </p>
+    </div>
+    
+    
+    <footer class="footer mt-5 py-3" style="background-color: #4caf50; color: #fff;">
+        <div class="container text-center">
+            <p>Made with <3 by Divyam and Karan :)</p>
+            <p>Get more detail about Pneumonia at here :) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8152712/" style="color: #fff;">Pneumonia Detection</a></p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
