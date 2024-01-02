@@ -2,15 +2,19 @@
 This project uses a pre-trained ResNet50 model from the FastAI library to detect pneumonia in chest X-rays. The dataset which is available on kaggle is used for training the model which classifies the chest xray as NORMAL, VIRAL PNEUMONIAL or BACTERIAL PNEUMONIAL
 
 First, train the model to generate the export.pkl file. Once the training process is complete, you can use this generated export.pkl file in your Flask application.
+<br><br>
 
 Before uploading image
-<image  width="600px" src="Screenshots/initial.jpg">
+<br>
+<image  width="600px" src="Screenshots/initial.png">
 
 Uploading the image 
-<image  width="600px" src="Screenshots/middle.jpg">
+<br>
+<image  width="600px" src="Screenshots/middle.png">
 
 After uploading the image 
-<image  width="600px" src="Screenshots/final.jpg">
+<br>
+<image  width="600px" src="Screenshots/final.png">
 
 ### Getting Started
 To use this project, follow these steps:
