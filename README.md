@@ -3,6 +3,15 @@ This project uses a pre-trained ResNet50 model from the FastAI library to detect
 
 First, train the model to generate the export.pkl file. Once the training process is complete, you can use this generated export.pkl file in your Flask application.
 
+Before uploading image
+<image  width="600px" src="Screenshots/initial.jpg">
+
+Uploading the image 
+<image  width="600px" src="Screenshots/middle.jpg">
+
+After uploading the image 
+<image  width="600px" src="Screenshots/final.jpg">
+
 ### Getting Started
 To use this project, follow these steps:
 1) Clone the repository: git clone https://github.com/Divyam6969/Pneumonia-Detection-using-FastAI<br>
